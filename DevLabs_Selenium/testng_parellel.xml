@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+  <test thread-count="5" name="Test1_Smoke" >
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="learnTestNG.letcode"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test2_Regression">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="learnTestNG.letcode"/>
+    </classes>
+  </test> 
+  
+</suite> <!-- Suite -->
